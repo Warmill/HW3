@@ -1,5 +1,5 @@
 print("5")
-print("Anna has {} apples and peaches.".format(2))
+print("Anna has {} apples and {} peaches.".format(2,3))
 print()
 print("6")
 print("Anna has {0} apples and {1} peaches.".format("three","one thousand"))
