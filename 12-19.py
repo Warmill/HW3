@@ -11,12 +11,10 @@ print("after")
 lst=[num**2 if num%2==1 else num ** 4 for num in range (10)]
 print(lst)
 
-print()
-print("13")
+print('\n',"13")
 print("before")
 list_comprehension = [num // 2 if num % 2 == 0 else num * 10 for num in range(10)]
 print(list_comprehension)
-print()
 print("after")
 list_comprehension = []
 for num in range(10):
@@ -28,8 +26,7 @@ for num in range(10):
 
 print(list_comprehension)
 
-print()
-print("14")
+print('\n',"14")
 print("before")
 d = {}
 for num in range(1, 11):
@@ -40,8 +37,7 @@ print("after")
 d1={num: num**2 for num in range (1,11) if num%2==1}
 print(d1)
 
-print()
-print("15")
+print('\n',"15")
 print("before")
 d = {}
 for num in range(1, 11):
@@ -54,8 +50,7 @@ print("after")
 d1={num: num**2 if num%2==1 else num//0.5 for num in range (1,11)}
 print(d1)
 
-print()
-print("16")
+print('\n',"16")
 print("before")
 dict_comprehension = {x: x**3 for x in range(10) if x**3 % 4 == 0}
 print(dict_comprehension)
@@ -66,8 +61,7 @@ for x in range(10):
         d1[x]=x**3
 print(d1)
 
-print()
-print("17")
+print('\n',"17")
 print("before")
 dict_comprehension = {x: x**3 if x**3 % 4 == 0 else x for x in range(10)}
 print(dict_comprehension)
@@ -80,8 +74,7 @@ for x in range(10):
         d1[x]=x
 print(d1)
 
-print()
-print("18")
+print('\n',"18")
 print("before")
 def foo(x, y):
     if x < y:
@@ -93,8 +86,7 @@ print("after")
 foo1=lambda x,y:x if (x<y) else y
 print(foo1(1,2))
 
-print()
-print("19")
+print('\n',"19")
 print("before")
 foo = lambda x, y, z: z if y < x and x > z else y
 print(foo(1,2,3))

@@ -8,39 +8,36 @@ print("1")
 print("int_a id is ",id(int_a)," , ","str_b id is ",id(str_b)," , ",
       "set_c id is ",id(set_c)," , ","lst_d id is ",id(lst_d)," , ",
       "dict_e id is ",id(dict_e))
-print()
 
-print("2")
+print('\n',"2")
 lst_d.append(4)
 lst_d.append(5)
 print("lst_d after append is ",lst_d)
 print("lst_d id after append is ",id(lst_d))
-print()
 
-print("3")
+print('\n',"3")
 print("int_a is ",type(int_a),", ","str_b is ",type(str_b),", ",
       "set_c is ",type(set_c),", ","lst_d is ",type(lst_d),", ",
       "dict_e is ",type(dict_e))
-print()
 
-print("4")
+print('\n',"4")
 def func(varia):
     if isinstance(varia,int)==True :
-        return(" is int")
+        return("is int")
     else:
         if isinstance(varia,str)==True :
-            return(" is str")
+            return("is str")
         else:
             if isinstance(varia, set) == True:
-                return(" is set")
+                return("is set")
             else:
                 if isinstance(varia, list) == True:
-                    return(" is list")
+                    return("is list")
                 else:
                     if isinstance(varia, dict) == True:
-                        return(" is dict")
+                        return("is dict")
                     else:
-                        return(" is undifined variable type")
+                        return("is undifined variable type")
 
 
 print ("int_a",func(int_a))
