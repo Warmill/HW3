@@ -16,11 +16,11 @@ print("multiplied elements by 2 ", new_lst)
 
 print('\n',"23")
 list_A=[2,3,4]
+list_B=[5,6,7]
 print("list A",list_A)
-new_lst1=[x+3 for x in list_A]
-new_lst2=list(map(lambda x:x+3,list_A))
-print("raised List var1",new_lst1)
-print("raised list var2",new_lst2)
+print("list B",list_B)
+new_lst=list(map(lambda x,y:x**y,list_A,list_B))
+print("raised list",new_lst)
 
 print('\n',"24")
 print("old list ",lst_to_sort)
